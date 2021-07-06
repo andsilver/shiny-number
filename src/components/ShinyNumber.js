@@ -33,7 +33,7 @@ export function ShinyNumber() {
       return setErrorMessage("N must be an integer");
     }
 
-    while (numbers.length < 100) {
+    while (numbers.length <= 100) {
       const temp = `${currentNumber}`.split("").sort().join("");
 
       if (+temp === currentNumber) {
